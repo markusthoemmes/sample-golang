@@ -31,6 +31,7 @@ func logRequest(r *http.Request) {
 	uri := r.RequestURI
 	method := r.Method
 	fmt.Println(fmt.Sprintf(`{"method": "%s", "uri": "%s", "message": "got a request"}`, method, uri))
+	fmt.Fprintln(os.Stderr, "an error happened!")
 }
 
 func main() {
