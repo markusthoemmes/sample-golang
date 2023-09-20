@@ -1,3 +1,3 @@
 #!/bin/bash
 
-fallocate -l 20G testfile
+fallocate -l 16G testfile
